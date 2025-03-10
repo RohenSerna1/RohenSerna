@@ -2,7 +2,7 @@ import sys
 import os
 import unittest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from countingValleys import countingValleys
+from src.countingValleys import countingValleys
 
 class TestCountingValleys(unittest.TestCase):
     def test_example_1(self):

@@ -1,7 +1,6 @@
 def countingValleys(steps, path):
     level = 0
     valleys = 0
-    representation = []
 
     for steps in path:
         if steps =='U':

@@ -2,7 +2,7 @@ import unittest
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from jumpgameII import jump
+from src.jumpgameII import jump
 
 class TestJumpGameII(unittest.TestCase):
     def test_jump(self):
