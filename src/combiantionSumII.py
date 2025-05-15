@@ -7,24 +7,23 @@ def combinationSum2(candidates, target):
             return
         
         for i in range(start, len(candidates)):
-            # Evitar duplicados
             if i > start and candidates[i] == candidates[i - 1]:
                 continue
             backtrack(i + 1, path + [candidates[i]], target - candidates[i])
     
-    candidates.sort()  # Ordenar para facilitar la eliminación de duplicados
+    candidates.sort()
     result = []
     backtrack(0, [], target)
     return result
 
 if __name__ == "__main__":
-    # Ejemplo 1
+
     candidates1 = [10, 1, 2, 7, 6, 1, 5]
     target1 = 8
     print("Ejemplo 1:")
     print(combinationSum2(candidates1, target1))
 
-    # Ejemplo 2
+
     candidates2 = [2, 5, 2, 1, 2]
     target2 = 5
     print("Ejemplo 2:")
